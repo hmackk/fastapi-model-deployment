@@ -66,3 +66,4 @@ def test_post_class_0(class_0):
 def test_post_class_1(class_1):
     response = client.post("/predict", json=class_1)
     assert response.status_code == 200
+    assert response.json() == {"predictions": "[' >50K']"}

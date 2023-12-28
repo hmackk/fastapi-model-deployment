@@ -5,7 +5,7 @@ import pickle
 
 import pandas as pd
 from ml.data import process_data
-from ml.model import evaluate_slices, inference, train_model
+from ml.model import compute_model_metrics, evaluate_slices, inference, train_model
 from sklearn.model_selection import train_test_split
 
 # Add code to load in the data.
@@ -45,5 +45,10 @@ pickle.dump(lb, open(os.path.join("starter/model", "labelizer.pkl"), "wb"))
 
 
 preds = inference(model, X_test)
+
+
+precision, recall, fbeta = compute_model_metrics(y_test, preds)
+print(f"Precision: {precision}, Recall: {recall}, Fbeta: {fbeta}")
+
 for feature in cat_features:
     evaluate_slices(test, feature, y_test, preds)
