@@ -17,9 +17,9 @@ The model was evaluated on a test set which consisted of 20% of the total data.
 
 The model achieved the following scores:
 
-Precision: 0.71
+Precision: 0.73
 Recall: 0.62
-Fbeta: 0.66
+Fbeta: 0.67
 
 ## Ethical Considerations
 
