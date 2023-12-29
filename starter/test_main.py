@@ -35,19 +35,20 @@ def class_1():
     """
     return {
         "age": 52,
-        "workclass": "Self-emp-inc",
-        "fnlgt": 287927,
-        "education": "HS-grad",
-        "education_num": 9,
-        "marital_status": "Married-civ-spouse",
-        "occupation": "Exec-managerial",
-        "relationship": "Wife",
-        "race": "White",
-        "sex": "Female",
-        "capital_gain": 15024,
-        "capital_loss": 0,
-        "hours_per_week": 40,
-        "native_country": "United-States",
+        "workclass": " Self-emp-not-inc",
+        "fnlgt": 209642,
+        "education": " HS-grad",
+        "education-num": 9,
+        "marital-status": " Married-civ-spouse",
+        "occupation": " Exec-managerial",
+        "relationship": " Husband",
+        "race": " White",
+        "sex": " Male",
+        "capital-gain": 0,
+        "capital-loss": 0,
+        "hours-per-week": 45,
+        "native-country": " United-States",
+        "salary": " >50K",
     }
 
 
